@@ -24,7 +24,7 @@ class Pipeline:
             self.FIFO = False
 
         else:
-            raise ValueError("Pipeline.mode must be 'FIFO' or 'LIFO'.")
+            raise ValueError("Keyword argument 'mode' must be 'FIFO' or 'LIFO'.")
 
         self.last_pos = 0    # Most recently filled position
         self.array = []      # Holds PipeObjects
