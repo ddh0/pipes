@@ -11,7 +11,7 @@ A tiny, pure-python class for sending and receiving data in a queue.
 
 FIFO mode - First in, first out:
 
-'''
+```
 >>> import pipes
 >>> P = pipes.Pipeline()
 >>> P.add("first")
@@ -24,11 +24,11 @@ FIFO mode - First in, first out:
 >>> P.get()
 'third'
 >>>
-'''
+```
 
 LIFO mode - Last in, first out:
 
-'''
+```
 >>> import pipes
 >>> P = pipes.Pipeline(mode="LIFO")
 >>> P.add("first")
@@ -41,7 +41,7 @@ LIFO mode - Last in, first out:
 >>> P.get()
 'first'
 >>>
-'''
+```
 
 Pipeline.flush - Reset the pipeline to its original state
 
