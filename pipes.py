@@ -1,6 +1,9 @@
 # Python 3.8.2
 # Written by Dylan Halladay
 
+class EmptyPipeline(Exception):
+    """Error thrown when .get() is called on an empty Pipeline object"""
+    pass
 
 class Pipeline:
     """A class for sending and recieving data
@@ -51,7 +54,7 @@ class Pipeline:
         """Get the next object from the queue."""
 
         if len(self.array) < 1:
-            raise IndexError("Empty Pipeline")
+            raise EmptyPipeline
 
         if not self.FIFO:
             item = self.array.pop()        # Remove and return last item
