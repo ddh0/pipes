@@ -5,7 +5,7 @@ A tiny, pure-python class for sending and receiving data in a queue.
 - No dependencies other than the Python 3 bultins
 - Functional and readable
 - Simple to use, with only three methods
-- Pipeline objects are ```pickle```-able
+- Pipeline objects are ```pickle```-able, and thus easily persistent between sessions or shared however you like
 
 # Examples
 
